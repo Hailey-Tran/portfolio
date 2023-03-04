@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/styles/sitestyle.css">
+        <script src="app.js"></script>
+        <title>Hailey's Portfolio</title>
+    </head>
+
+    <body>
+
+    <header>
+        <!--
+        <h3 id="logo">Hailey Tran</h3>
+        -->
+        <!--Navigation-->
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li><a href="#about-me-section">About Me</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/haileymtran/">LinkedIn</a></li>
+                <li><a href="https://github.com/Hailey-Tran">Github</a></li>
+            </ul>
+             
+        </nav>
+    </header>
+
+    <main>
+        <!--
+
+            HOMEPAGE
+
+        -->
+
+        <div id="homepage-section">
+            <section class="static-header">Hi, I'm Hailey</section>
+            
+            <picture class="homepage-bg">
+                <img src="./images/homepage_me.jpg" alt="Homepage Portrait Photo" id="homepage-intro">
+            </picture>
+
+            <section class="animation-header">
+                <section class="static-header">I am a</section>
+                <ul class="animation">
+                    <li><span>Software Engineer</span></li>
+                    <li><span>Computer Scientist</span></li>
+                    <li><span>Mathematician</span></li>
+                </ul>
+            </section>
+        </div>
+
+        <!--
+
+            ABOUT ME 
+        
+        -->
+
+        <div id="about-me-section">
+            <div class="about-me-info">
+                
+                <h2>meet Hailey</h2>
+
+                <div id="alum-info" class="about-me-area">
+                    <picture>
+                        <img src="./images/graduation.png" alt="Grad Photo" id="grad-info-image">
+                    </picture>
+                    <p>I recently graduated from University of California San Diego in June 2022. I majored in Mathematics 
+                        Computer Science and minored in Sociology.
+                    </p>
+                    <p>
+                        Download Resume
+                    </p>
+                </div>
+                <div id="interest-info" class="about-me-area">
+                    <img src="./images/coding.png" alt="Career Photo" id="career-info-image">
+                    <p>My career interests include Frontend Development, Backend Development, Fullstack Development, and 
+                        Web Applications.
+                    </p>
+                </div>
+                <div id="music-info" class="about-me-area">
+                    <img src="./images/music.png" alt="Music Photo" id="music-info-image">
+                    <p>I definitely need music to study or code, I love listening to lofi music when I'm doing work.
+                        Other than that, I love listening to Taylor Swift, The Weeknd, DVSN, and anything R&B!
+                    </p>
+                </div>
+                <div id="hobby-info" class="about-me-area">
+                    <img src="./images/cake.png" alt="Cake Photo" id="hobby-info-image">
+                    <p>I love baking to destress! My favorite snacks to bake are cupcakes and brownies! I've also recently gotten
+                        very into film cameras! You'll always catch me with a disposable camera ready to capture the moment!
+                    </p>
+                </div>
+            </div>
+
+            <div id="skills-info" class="about-me-skills-area">
+                <h1>Skills</h1>
+                <div class="skill-bars">
+                    <li><h3>Python</h3>
+                        <span class="bar"><span class="python"></span></span>
+                    </li>
+
+                    <li><h3>Java</h3>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+
+                    <li><h3>C/C++</h3>
+                        <span class="bar"><span class="c"></span></span>
+                    </li>
+
+                    <li><h3>JavaScript</h3>
+                        <span class="bar"><span class="javascript"></span></span>
+                    </li>
+
+                    <li><h3>HTML</h3>
+                        <span class="bar"><span class="html"></span></span>
+                    </li>
+
+                    <li><h3>CSS</h3>
+                        <span class="bar"><span class="css"></span></span>
+                    </li>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+
+            PROJECTS
+        
+        -->
+
+
+        <div id="projects">
+            <h2 class="project-header">My Latest Work</h2>
+
+            <div class="slide-container">
+                <div class="slider">
+                    <div class="slides">
+                        <div id="slide1" class="slide">
+                            <span class="slide__text">Harry Potter Analysis</span>
+                            <p class="slide__content">University of California San Diego</p>
+                            <p class="slide__content">B.S. in Mathematics Computer Science with a Minor in Sociology</p>
+                            <p class="slide__content__info">Relevant Coursework:</p>
+                            <ul class="coursework">
+                                <li><span>Advanced Data Structures & Algorithms</span></li>
+                                <li><span>Linear Algebra</span></li>
+                            </ul>
+                            <a class="slide__prev" href="#slide4" title="Next"></a>
+                            <a class="slide__next" href="#slide2" title="Next"></a>
+                        </div>
+                        <div id="slide2" class="slide">
+                            <span class="slide__text">Extracurriculars</span>
+                            <a class="slide__prev" href="#slide1" title="Next"></a>
+                            <a class="slide__next" href="#slide3" title="Next"></a>
+                        </div>
+                        <div id="slide3" class="slide">
+                            <span class="slide__text">Hobbies</span>
+                            <a class="slide__prev" href="#slide2" title="Next"></a>
+                            <a class="slide__next" href="#slide1" title="Next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+
+
+
+    </main>
+
+    <section id="footer">
+        <footer>
+            <a href="#top">Jump to the top of the page</a>
+        </footer>
+    </section>  
+    </body> 
+    
+</html>
