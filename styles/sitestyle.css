@@ -103,10 +103,8 @@ html, body {
 .sidebar-ul li {
     display: flex;
     align-items: center;
-    color: white;
     height: 5rem;
     text-decoration: none;
-
 }
 
 .sidebar-item {
@@ -286,6 +284,59 @@ header {
         margin: 0 -35px 0 35px ;
     }
 }
+
+/*
+        HOMEPAGE ARROW
+*/
+#homepage-section .arrow-animation {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    left: 50%;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#homepage-section .arrow-animation::before,
+#homepage-section .arrow-animation::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid var(--pop-color);
+    height: 16px;
+    width: 16px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: arrow-animation 1s ease-in-out infinite;
+
+}
+
+#homepage-section .arrow-animation::after {
+    top: 30%;
+    animation-delay: .3s;
+
+}
+
+@keyframes arrow-animation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+
+}
+
+
 
 /* 
         ABOUT ME 
@@ -526,9 +577,6 @@ header {
     padding: 15px;
 }
 
-#projects .slide {
-
-}
 
 #projects p {
     color: black;
@@ -637,23 +685,24 @@ a.slide__next{
 */
 
 #extracurriculars {
-    width: 70%;
+    width: 60%;
     padding: 5%; 
     display: flex;
     align-items: center;
     justify-content: center;  
+    margin: auto;
 }
 
-#extracurriculars .extra-header {
-    font-size: 50px;
+.extra-header {
+    font-size: 60px;
+    margin-bottom: 0;
+    padding-top: 35px;
     color: var(--border-color);
-    padding-right: 100px;
-    
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
 }
 
-.row {
-   
-}
 
 .extra-col .extra-contents {
     padding: 0px 30px;
@@ -669,7 +718,6 @@ a.slide__next{
     cursor: pointer;
     transition: all 0.4s;
     margin-bottom: 20px;
-    
 }
 
 .extra-col .extra-contents .extra-box:hover {
