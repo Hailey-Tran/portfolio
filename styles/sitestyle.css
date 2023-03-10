@@ -335,6 +335,11 @@ header {
     margin: 20px 8px;
 }
 
+.about-me-area a {
+    text-decoration: none;
+    color: var(--pop-color);
+}
+
 #about-me-section img {
     width: 100px;
     height: 100px;
@@ -370,9 +375,6 @@ header {
     color: var(--pop-color);
 }
 
-.slide__text {
-}
-
 #projects img {
     width: 100px;
     height: 100px;
@@ -384,11 +386,6 @@ header {
     border: 5px solid var(--bg-third-color);
     border-radius: 20px;
     padding: 15px;
-}
-
-
-#projects p {
-    color: black;
 }
 
 
@@ -405,15 +402,12 @@ header {
 
 .slider {
     width: 900px;
-    height: 400px;
+    height: 420px;
     margin: 20px;
     text-align: center;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    /*
-    border: 10px solid var(--bg-third-color);
-    */
     box-shadow: 0 14px 28px var(--bg-third-color), 0 10px 10px var(--bg-third-color);
 
 }
@@ -427,7 +421,7 @@ header {
 }
 
 .slide:nth-of-type(even) {
-    background-image: linear-gradient(to right top, #fccab3, #f6d6b6, #eee2c0, #e8edce, #e5f6df);    
+    background-image: linear-gradient(to right top, #fccab3, #f6d6b6, #eee2c0, #e8edce, #e5f6df);
 }
 
 .slide:nth-of-type(odd) {
@@ -439,7 +433,7 @@ header {
     justify-content: center;
     flex-shrink: 0;
     width: 100%;
-    height: 400px;
+    height: 420px;
     margin-right: 0px;
     box-sizing: border-box;
     background: white;
@@ -461,6 +455,13 @@ header {
     font-size: 20px;
     text-align: center;
     margin: 20px 60px;
+    color: var(--text-color);
+}
+
+#projects .slide-langs {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 60px;
     color: var(--text-color);
 }
 
@@ -571,44 +572,6 @@ a.slide__next{
     }
 }
 
-
-
-
-/* 
-        CONTACT PAGE  
-*/
-
-.contact-main {
-    color: var(--text-color);
-}
-
-#contact-header {
-    color: var(--pop-color);
-    text-align: center;
-    font-size: 50px;
-}
-
-.email-header {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-wrap: flex;
-    text-align: center;
-    width: 400px;
-    margin: 0 auto 0 auto;
-}
-
-
-.linkedin-header {
-    text-align: center;
-}
-
-.button {
-    margin: 0 auto;
-    display: block;
-}
 
 /* 
         FOOTER 
