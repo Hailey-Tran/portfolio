@@ -187,7 +187,6 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 #homepage-section .animation {
@@ -318,11 +317,7 @@ header {
 .about-me-area {
     background-color: var(--bg-second-color);
     box-shadow: 0 14px 28px var(--bg-third-color), 0 10px 10px var(--bg-third-color);
-    /*
-    width: 300px;
-    height: 325px;
-    */
-    width: 50%;
+    width: 45%;
     max-height: 100%;
     margin: 20px;
     border-radius: 20px;
@@ -350,12 +345,148 @@ header {
     border-radius: 20px;
 }
 
+            /* 
+                    SMALLER SCREENS
+            */
+
 @media(max-width: 768px) {
-    .about-me-info {
+
+    .animation-header {
         display: flex;
-        flex-direction: column;
+        font-size: 50px;
     }
 
+    .static-header {
+        font-size: 50px;
+    }
+
+    #homepage-section .animation {
+        line-height: 60px; /* Adjust line height for smaller screens */
+        height: 60px; /* Adjust height for smaller screens */
+    }
+
+    .animation li {
+        list-style: none;
+        font-size: 50px;
+        animation: slide 12s steps(3) infinite;
+        position: relative;
+        color: var(--pop-color);
+        font-weight: bold;
+        margin-bottom: 30px; /* Add margin bottom to create space between list items */
+    }
+
+    @keyframes slide {
+        100% {
+            top: -270px;
+        }
+    }
+    
+    .animation li span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: white;
+        border-left: 2px solid var(--pop-color);
+        animation: typing 4s steps(18) infinite;
+    }
+    
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
+
+    #homepage-section .arrow-animation {
+        position: absolute;
+        height: 50px;
+        width: 30px;
+        left: 50%;
+        bottom: -90px; /* Adjust the bottom property to shift the arrow down */
+        cursor: pointer;
+    }
+
+    .about-me-area {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Center the about me areas */
+    }
+
+    #about-me-section {
+        margin-bottom: 50px;
+        height: auto; /* Set height to auto to allow content to expand vertically */
+    }
+
+    #about-me-section h2 {
+        font-size: 40px;
+        margin: 30px 0; /* Adjust margin */
+    }
+
+    #about-me-section img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .about-me-area p {
+        margin: 10px 0;
+    }
+
+    .about-me-info {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    #projects {
+        margin-top: 50px;
+        height: auto; /* Set height to auto to allow content to expand vertically */
+    }
+
+    .project-header {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    #projects .slide-content,
+    #projects .slide-langs {
+        font-size: 12px; /* Reduce font size */
+        margin: 6px 10px; /* Adjust margin */
+    }
+
+    #extracurriculars-container {
+        padding: 10px; /* Add padding */
+    }
+
+    .extra-header {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .extra-box h3,
+    .extra-box h4,
+    .extra-box-text {
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .slide-container {
+        width: 100%; /* Make slides container full width */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .slider {
+        width: 90%; /* Adjust slider width */
+    }
+
+    .slides {
+        display: flex;
+        overflow-x: scroll;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        background: linear-gradient(to right top, #fccab3, #f6d6b6, #eee2c0, #e8edce, #e5f6df);
+        height: 420px;
+        background-size: 200%;
+    }
+
+    
 }
 
 
@@ -420,15 +551,6 @@ header {
     scroll-snap-type: x mandatory;
 }
 
-.slide:nth-of-type(even) {
-    background-image: linear-gradient(to right top, #fccab3, #f6d6b6, #eee2c0, #e8edce, #e5f6df);
-}
-
-.slide:nth-of-type(odd) {
-    background-image: linear-gradient(to left bottom, #fccab3, #f6d6b6, #eee2c0, #e8edce, #e5f6df);
-    
-}
-
 .slide {
     justify-content: center;
     flex-shrink: 0;
@@ -440,6 +562,7 @@ header {
     transform-origin: center center;
     transform: scale(1);
     scroll-snap-align: center;
+    background: linear-gradient(to right top, #fccab3, #f6d6b6, #eee2c0, #e8edce, #e5f6df);
 }
 
 .slide__text {
@@ -487,6 +610,7 @@ a.slide__next{
     -webkit-transform: rotate(-45deg);
     right: 5%;
 }
+
 
 
 
@@ -574,9 +698,7 @@ a.slide__next{
 
 
 /* 
-        FOOTER 
-        
-        
+        FOOTER  
 */
 
 #footer {
